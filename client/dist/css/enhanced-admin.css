@@ -1,0 +1,80 @@
+.tox-tiered-menu > .tox-collection:first-child .tox-collection__group > *:not([role="menuitem"]):not([title*="Heading"]):not([title*="Paragraph"]):not([title*="Div"]):not([title*="Blockquote"]):not([title*="Preformatted"]) {
+    display: none !important;
+}
+
+/* FIX HORIZONTAL SCROLLBAR */
+#preview-mode-dropdown-in-content .chosen-drop {
+    right: 0;
+    width: 160px;
+}
+
+/* LEFT AND MAIN ORDER */
+.cms-menu__list {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.cms-menu__list > li {
+    order: 50;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-CMS-Controllers-CMSPagesController,
+.cms-menu__list > li#Menu-WeDevelop-Menustructure-Admin-MenusAdmin {
+    order: 40;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-AssetAdmin-Controller-AssetAdmin {
+    order: 60;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-Admin-SecurityAdmin {
+    order: 80;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-VersionedAdmin-ArchiveAdmin,
+.cms-menu__list > li#Menu-TractorCow-Fluent-Control-LocaleAdmin,
+.cms-menu__list > li#Menu-SilverStripe-RedirectedURLs-Admin-RedirectedURLAdmin,
+.cms-menu__list > li#Menu-CyberDuck-SEO-Admin-SEOAdmin {
+    order: 100;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-CampaignAdmin-CampaignAdmin,
+.cms-menu__list > li#Menu-SilverStripe-Reports-ReportAdmin {
+    order: 110;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-SiteConfig-SiteConfigLeftAndMain {
+    order: 70;
+    border-bottom: 1px solid hsl(218, 24%, 85%);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-RedirectedURLs-Admin-RedirectedURLAdmin {
+    margin-bottom: 10px;
+}
+
+.cms-menu__list > li#Menu-SilverStripe-CampaignAdmin-CampaignAdmin {
+    border-top: 1px solid hsl(218, 24%, 85%);
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+/* UI NAV */
+#Root > .ui-tabs-nav {
+    display: flex;
+}
+
+#Root > .ui-tabs-nav > li {
+    order: 50;
+}
+
+#Root > .ui-tabs-nav > li[aria-controls="Root_MetaTags"],
+#Root > .ui-tabs-nav > li[aria-controls="Root_Sitemap"] {
+    order: 60;
+}
+
+#Root > .ui-tabs-nav > li[aria-controls="Root_MetaTags"] {
+    margin-left: auto;
+}

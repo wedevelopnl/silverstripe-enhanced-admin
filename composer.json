@@ -1,0 +1,28 @@
+{
+    "name": "wedevelopnl/silverstripe-enhanced-admin",
+    "description": "A SilverStripe module that adds enhancements to the default admin",
+    "keywords": [
+        "silverstripe",
+        "enhancements",
+        "admin",
+        "cms"
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "WeDevelop",
+            "email": "development@wedevelop.nl"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "^5.0",
+        "silverstripe/admin": "^2.0"
+    },
+    "extra": {
+        "expose": [
+            "client/dist"
+        ]
+    }
+}
