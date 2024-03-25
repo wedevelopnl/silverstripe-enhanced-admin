@@ -11,6 +11,10 @@ use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\Forms\NumericField;
 use SilverStripe\ORM\DataExtension;
 
+/**
+ * @property ?string $LoginPageContent
+ * @property ?int $AdminLogoWidth
+ */
 final class SiteConfigExtension extends DataExtension
 {
     /**
@@ -24,7 +28,7 @@ final class SiteConfigExtension extends DataExtension
 
     /**
      * @config
-     * @var array<string, string>
+     * @var array<string, class-string>
      */
     private static array $has_one = [
         'AdminLogo' => Image::class,
