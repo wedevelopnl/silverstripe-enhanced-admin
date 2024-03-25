@@ -19,7 +19,7 @@ final class SiteConfigExtension extends DataExtension
      */
     private static array $db = [
         'LoginPageContent' => 'HTMLText',
-        'AdminLogoWidth' => 'Int(150)'
+        'AdminLogoWidth' => 'Int(150)',
     ];
 
     /**
@@ -43,7 +43,7 @@ final class SiteConfigExtension extends DataExtension
         $fields->addFieldsToTab('Root.Admin.LoginPage', [
             HTMLEditorField::create('LoginPageContent', 'Login page content'),
             UploadField::create('AdminLogo', 'Admin logo'),
-            NumericField::create('AdminLogoWidth', 'Width of the admin logo')
+            NumericField::create('AdminLogoWidth', 'Width of the admin logo'),
         ]);
 
 

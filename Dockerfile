@@ -16,6 +16,8 @@ RUN composer install --prefer-dist --no-progress --no-interaction --no-plugins -
 COPY dev/docker/docker-entrypoint.sh /usr/local/bin/docker-entrypoint
 RUN chmod +x /usr/local/bin/docker-entrypoint
 
+COPY .php-cs-fixer.php ./
+
 ENTRYPOINT ["docker-entrypoint"]
 
 CMD ["php"]
